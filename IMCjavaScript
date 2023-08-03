@@ -1,0 +1,32 @@
+//comandos entradas e saidas
+//variaveis
+nomeCompleto = prompt("Digite o seu nome completo");
+pesoKg = Number(prompt("Digite o seu peso em kg"));
+altura = Number(prompt("Digite a sua altura em m"));
+IMC = pesoKg/(altura*altura)
+
+console.log("Obrigada pelas informações, seja bem vindx " + nomeCompleto);
+console.log("o seu IMC é: " + IMC.toFixed(2) );
+if(IMC< 18.5){
+  console.log("Peso baixo");//abaixo de 18.5 
+}
+
+else if(IMC< 25){
+  console.log("Peso favoravel");//de 18.5 a 24.9
+  
+}
+else if(IMC< 30){
+  console.log("Peso gordo");//de 24.9 a 29.9
+  
+}
+else if(IMC< 35){
+  console.log("Obeso 1");//de 29.9 a 34.9
+  
+}
+else if(IMC< 40){
+  console.log("Obeso 2");//de 34.9 a 39.9
+}
+else{ 
+  console.log("Vai infartar");//acima de 39.9 
+  
+}
